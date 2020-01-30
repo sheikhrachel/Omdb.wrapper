@@ -1,4 +1,5 @@
 # Omdb.wrapper
+[![Build status](https://travis-ci.org/sheikhisaac/Omdb.wrapper.svg?branch=master)](https://travis-ci.org/sheikhisaac)
 
 Python wrapper class for Omdb movie database API
 
