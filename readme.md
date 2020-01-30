@@ -3,6 +3,13 @@
 
 Python wrapper class for Omdb movie database API
 
+## Features
+- Builds configured via Travis CI/CD
+
+- Git hooks configured with Pre-Commit
+
+- Streamlined API calls to organise data for Movie searches
+
 ## Prerequisites
 
 Ensure you are running Python 3.7.1
@@ -21,6 +28,12 @@ Use pipenv to access functions
 
 ```zsh
 $ pipenv shell
+```
+
+Set up git hooks for pre-commit checks notated in .pre-commit-config.yaml
+
+```zsh
+$ pre-commit install
 ```
 
 ## Usage
