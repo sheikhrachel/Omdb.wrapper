@@ -16,6 +16,10 @@ Python wrapper class for Omdb movie database API
 
 - Provides Actor, Director, Genre, Country, Language, and Production Studio searches in search history
 
+- Provides typechecking and error handling for user inputs
+
+- Help documentation implemented for information on valid types and inputs on functions
+
 ## Prerequisites
 
 Ensure you are running Python 3.7.1
