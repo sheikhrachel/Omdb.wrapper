@@ -1,9 +1,6 @@
 import requests
 import urllib.parse
 
-# TODO: Travis CI/CD
-# TODO: AWS Key Management
-
 
 class omdb_wrapper:
     # Init omdb_wrapper object with api_key from Omdb
