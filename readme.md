@@ -10,6 +10,12 @@ Python wrapper class for Omdb movie database API
 
 - Streamlined API calls to organise data for Movie searches
 
+- Batches Movie searches into search history
+
+- Provides Movie search history sorted by Metacritic rating, alphabetically by title, or by year
+
+- Provides Actor, Director, Genre, Country, Language, and Production Studio searches in search history
+
 ## Prerequisites
 
 Ensure you are running Python 3.7.1
@@ -47,8 +53,14 @@ api_key = 'xxxxxxxx'
 # instantialises jeopardy_parser object
 test_wrapper = omdb_wrapper(api_key)
 
-# creates dict of results from omdb api request
-test_wrapper.build_dict_from_api(test_wrapper.search_movie_title('Toy Story'))
+# creates dictionary of results from omdb api request from a movie title and appends to search history
+test_wrapper.build_dict_from_api(test_wrapper.create_movie_search_url('title', 'Toy Story'))
+
+# sort search history dictionary by year and return list
+test_wrapper.sort_movies('year', 'new_to_old')
+
+# return list of movie titles from search history dictionary with provided search type and query
+test_wrapper.search_movies('actor', 'chris pratt')
 ```
 
 Run the unit tests

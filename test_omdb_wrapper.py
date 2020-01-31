@@ -17,11 +17,13 @@ def movie_id():
     return movie_id
 
 
-# Test search_movie_title method return
-def test_search_movie_title(movie_title):
-    assert test_wrapper.search_movie_title(movie_title) == "&t=toy%20story"
+# Test create_movie_search_url method return
+def test_create_movie_search_url_from_title(movie_title):
+    assert (
+        test_wrapper.create_movie_search_url("title", movie_title) == "&t=toy%20story"
+    )
 
 
-# Test search_movie_id method return
-def test_search_movie_id(movie_id):
-    assert test_wrapper.search_movie_id(movie_id) == "&i=tt0114709"
+# Test create_movie_search_url method return
+def test_create_movie_search_url_from_id(movie_id):
+    assert test_wrapper.create_movie_search_url("id", movie_id) == "&i=tt0114709"
